@@ -1,11 +1,13 @@
 import "./App.css";
-import ApproachSection from "./components/ApproachSection/ApproachSection";
+import ApproachSection from "./components/ApproachSection/ApproachSection"; 
+import LargeTextMarque from "./components/LargeTextMarque/LargeTextMarque";
 import Navbar from "./components/Navbar/Navbar";
 import StatsCard from "./components/StatsCard/StatsCard";
 import VideoBanner from "./components/VideoBanner/VideoBanner";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+ 
 
 function App() {
   useEffect(() => {
@@ -20,7 +22,8 @@ function App() {
       <Navbar></Navbar>
       <VideoBanner></VideoBanner>
       <ApproachSection></ApproachSection>
-     <StatsCard></StatsCard>
+      <StatsCard></StatsCard>
+     <LargeTextMarque></LargeTextMarque>
     </div>
   );
 }
