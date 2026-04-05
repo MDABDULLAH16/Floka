@@ -6,12 +6,11 @@ function App() {
  
 
   return (
-     
-    <div>
+    <div className="bg-[#f5f5f5]">
       <Navbar></Navbar>
       <h1>Welcome to Floka</h1>
-  </div>
-  )
+    </div>
+  );
 }
 
 export default App

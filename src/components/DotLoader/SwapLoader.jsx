@@ -4,18 +4,21 @@ import { gsap } from "gsap";
 
 const SwapLoader = () => {
   const dotsRef = useRef([]);
-  const orderRef = useRef([0, 1, 2, 3, 4]); // track current positions
   const isAnimating = useRef(false);
+  const isSwapped = useRef(false); // 👈 track state
 
   const positions = [
-    { x: 0, y: 0 }, // center
-    { x: 0, y: -20 }, // top
-    { x: 20, y: 0 }, // right
-    { x: 0, y: 20 }, // bottom
-    { x: -20, y: 0 }, // left
+    { x: 0, y: 0 }, // 0 center
+    { x: 0, y: -14 }, // 1 top
+    { x: 14, y: 0 }, // 2 right
+    { x: 0, y: 14 }, // 3 bottom
+    { x: -14, y: 0 }, // 4 left
   ];
 
-  // 👉 Set initial positions
+  // swap mapping
+  const swapMap = [0, 3, 4, 1, 2];
+  // center same, top↔bottom, left↔right
+
   useEffect(() => {
     dotsRef.current.forEach((dot, i) => {
       gsap.set(dot, positions[i]);
@@ -26,30 +29,31 @@ const SwapLoader = () => {
     if (isAnimating.current) return;
     isAnimating.current = true;
 
-    // rotate order (swap logic)
-    orderRef.current = [orderRef.current[4], ...orderRef.current.slice(0, 4)];
-
-    // animate to new positions
     dotsRef.current.forEach((dot, i) => {
-      const posIndex = orderRef.current[i];
+      const targetIndex = isSwapped.current ? i : swapMap[i];
+      const pos = positions[targetIndex];
 
       gsap.to(dot, {
         duration: 0.4,
-        x: positions[posIndex].x,
-        y: positions[posIndex].y,
+        x: pos.x,
+        y: pos.y,
         ease: "power2.inOut",
-        onComplete: () => {
-          isAnimating.current = false;
-        },
       });
     });
+
+    // toggle state
+    isSwapped.current = !isSwapped.current;
+
+    setTimeout(() => {
+      isAnimating.current = false;
+    }, 400);
   };
 
   return (
     <div
       onMouseEnter={handleHover}
       onMouseLeave={handleHover}
-      className="relative w-20 h-20 flex items-center justify-center cursor-pointer"
+      className="relative w-10 h-10 flex items-center justify-center cursor-pointer"
     >
       {[...Array(5)].map((_, i) => (
         <div
