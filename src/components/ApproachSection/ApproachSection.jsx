@@ -4,7 +4,7 @@ const circularTextString = "PLAYFUL LUXURIOUS OR MORE WANT IT TO SO SOUND";
 
 const ApproachSection = () => {
   return (
-    <section className="px-12 py-6  ">
+    <section className="px-2 py-6  ">
       <div className="flex flex-col   w-full justify-between gap-4 lg:flex-row lg:gap-20 items-center">
         {/* === LEFT: Circular Logo === */}
         <div className="flex flex-col">

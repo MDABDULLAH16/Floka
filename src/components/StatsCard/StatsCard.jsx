@@ -56,7 +56,7 @@ const StatsCard = () => {
   }, []);
 
   return (
-    <section ref={ref} className="px-12 relative   py-12">
+    <section ref={ref} className="px-2 relative   py-12">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1fr_2fr_1fr] gap-4 items-stretch">
         {/* LEFT CARD */}
         <div className="bg-white rounded-3xl p-6 flex flex-col justify-between min-h-80 col-span-1">

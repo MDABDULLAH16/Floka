@@ -2,6 +2,7 @@ import "./App.css";
 import ApproachSection from "./components/ApproachSection/ApproachSection"; 
 import LargeTextMarque from "./components/LargeTextMarque/LargeTextMarque";
 import Navbar from "./components/Navbar/Navbar";
+import Portfolio from "./components/Portfolio/Portfolio";
 import StatsCard from "./components/StatsCard/StatsCard";
 import VideoBanner from "./components/VideoBanner/VideoBanner";
 import AOS from "aos";
@@ -23,7 +24,8 @@ function App() {
       <VideoBanner></VideoBanner>
       <ApproachSection></ApproachSection>
       <StatsCard></StatsCard>
-     <LargeTextMarque></LargeTextMarque>
+      <LargeTextMarque></LargeTextMarque>
+      <Portfolio></Portfolio>
     </div>
   );
 }
