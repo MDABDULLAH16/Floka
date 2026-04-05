@@ -63,7 +63,7 @@ const InfoCard = () => {
             {/* Correct 'Let's Talk' Button (Matches Image 1 exactly) */}
             <div className="group flex items-center gap-3 w-fit cursor-pointer">
               <div className="flex items-center justify-center bg-black text-white w-10 h-10 rounded-full transition-transform group-hover:scale-105">
-                <FaPlus className="text-sm" />
+                <FaPlus className="text-sm hover:animate-spin" />
               </div>
               <p className="uppercase text-xs font-bold text-black tracking-[0.15em]">
                 Let's Talk
