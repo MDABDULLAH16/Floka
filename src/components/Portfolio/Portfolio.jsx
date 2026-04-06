@@ -1,6 +1,4 @@
-
-
-import img1 from "../../assets/imgi_71_home-8-featured-img1-800x800.jpg";
+ import img1 from "../../assets/imgi_71_home-8-featured-img1-800x800.jpg";
 import img2 from "../../assets/imgi_63_home1-bg-img15-800x800.jpg";
 import img3 from "../../assets/imgi_25_home1-bg-img3-1320x600.webp"
 import img4 from "../../assets/imgi_27_home1-bg-img2-655x450.webp"

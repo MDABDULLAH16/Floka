@@ -99,7 +99,7 @@ const ServiceAccordion = () => {
                     <img
                       src={service.image}
                       alt={service.title}
-                      className="rounded-2xl object-cover w-full max-w-[400px] h-64 shadow-2xl"
+                      className="rounded-2xl object-cover w-full max-w-100 h-64 shadow-2xl"
                     />
                   </div>
                 </div>

@@ -1,4 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
+import img1 from "../../assets/imgi_56_home1-team-img1-min-450x450.png";
+import img2 from "../../assets/imgi_57_home1-team-img2-min-450x450.png";
+import img3 from "../../assets/imgi_58_home1-team-img3-min-450x450.png";
+import img4 from "../../assets/imgi_59_home1-team-img4-min-450x450.png";
+ 
 
 const useCountUp = (target, duration = 2000, trigger) => {
   const [count, setCount] = useState(0);
@@ -40,6 +45,13 @@ const ProgressBar = ({ label, value }) => (
     </div>
   </div>
 );
+const team = [
+  {image:img1,id:1},
+  {image:img2,id:2},
+  {image:img3,id:3},
+  {image:img4,id:4},
+  
+];
 
 const StatsCard = () => {
   const ref = useRef(null);
@@ -74,15 +86,10 @@ const StatsCard = () => {
           </div>
           <div>
             <div className="flex -space-x-2 mb-2">
-              {[
-                "/src/assets/imgi_56_home1-team-img1-min-450x450.png",
-                "/src/assets/imgi_57_home1-team-img2-min-450x450.png",
-                "/src/assets/imgi_58_home1-team-img3-min-450x450.png",
-                "/src/assets/imgi_59_home1-team-img4-min-450x450.png",
-              ].map((src, i) => (
+              {team.map((src, i) => (
                 <img
                   key={i}
-                  src={src}
+                  src={src?.image}
                   alt="user"
                   className="w-9 h-9 rounded-full border-2 border-white object-cover"
                 />

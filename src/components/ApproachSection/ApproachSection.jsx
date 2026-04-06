@@ -1,5 +1,5 @@
 import React from "react";
-
+import logo from "../../assets/hero.png";
 const circularTextString = "PLAYFUL LUXURIOUS OR MORE WANT IT TO SO SOUND";
 
 const ApproachSection = () => {
@@ -10,7 +10,7 @@ const ApproachSection = () => {
         <div className="flex flex-col">
           <div className="relative w-18 h-18 md:w-24 md:h-24 shrink-0 flex items-center justify-center">
             <img
-              src="/src/assets/hero.png"
+              src={logo}
               alt="logo"
               className="w-14 h-14 md:w-14 md:h-14 object-contain"
             />

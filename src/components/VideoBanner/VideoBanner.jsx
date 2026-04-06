@@ -1,6 +1,8 @@
 import React from "react";
 import { FaPlus } from "react-icons/fa6";
 import InfoCard from "./InfoCard";
+ 
+ 
 
 const VideoBanner = () => {
   return (
@@ -13,17 +15,13 @@ const VideoBanner = () => {
         playsInline
         className="absolute top-0 left-0 w-full h-full object-cover"
       >
-        <source
-          src="/src/assets/Animal (2023) 1080p WEBRip Hindi x264.mkv"
-          type="video/mp4"
-        />
+        <source src="/banner-vdo.mkv" type="video/x-matroska" />
         Your browser does not support the video tag.
       </video>
 
       {/* 2. The Dark Overlay (Optional - improves text readability) */}
       <div className="absolute inset-0 bg-black/40"></div>
 
-      
       {/* 3. The Content Layer */}
       <div className="relative z-10 flex h-full w-full items-end pb-12 mt-4 md:pb-20 px-6 md:px-12 lg:px-20">
         <div className="flex flex-col md:flex-row justify-between items-end w-full gap-10">

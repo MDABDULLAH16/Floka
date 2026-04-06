@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import { FaPlus } from "react-icons/fa6"; // Correct plus icon
-
+import image1 from "../../assets/imgi_13_home-1-img-slide-300x300.jpg"; // Your profile image
 const InfoCard = () => {
   // 1. STATE & REFS for cursor tracking
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -34,7 +34,7 @@ const InfoCard = () => {
             style={{ width: "140px", height: "140px" }} // Fixed base size
           >
             <img
-              src="/src/assets/imgi_13_home-1-img-slide-300x300.jpg" // Your profile img
+              src={image1} // Your profile img
               alt="Profile of Almond D. Neilsi"
               className="w-full h-full object-cover transition-transform duration-100 ease-out"
               style={{
