@@ -3,6 +3,7 @@ import ApproachSection from "./components/ApproachSection/ApproachSection";
 import CompanyExpertise from "./components/CompanyExpertise/CompanyExpertise";
 import CursorFollower from "./components/CursorFollwer/CursorFollwer";
 import LargeTextMarque from "./components/LargeTextMarque/LargeTextMarque";
+import LogoGallery from "./components/LogoGallery/LogoGallery";
 import Navbar from "./components/Navbar/Navbar";
 import Portfolio from "./components/Portfolio/Portfolio";
 import StatsCard from "./components/StatsCard/StatsCard";
@@ -30,6 +31,7 @@ function App() {
       <LargeTextMarque></LargeTextMarque>
       <Portfolio></Portfolio>
       <CompanyExpertise></CompanyExpertise>
+      <LogoGallery></LogoGallery>
     </div>
   );
 }

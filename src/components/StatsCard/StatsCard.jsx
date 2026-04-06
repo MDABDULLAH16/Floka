@@ -3,8 +3,9 @@ import img1 from "../../assets/imgi_56_home1-team-img1-min-450x450.png";
 import img2 from "../../assets/imgi_57_home1-team-img2-min-450x450.png";
 import img3 from "../../assets/imgi_58_home1-team-img3-min-450x450.png";
 import img4 from "../../assets/imgi_59_home1-team-img4-min-450x450.png";
- 
-
+ import CEO from "../../assets/home1-author-img1.webp";
+import homeIcon1 from "../../assets/home-1-icon1.svg";
+import homeIcon2 from "../../assets/home-1-icon2.svg";
 const useCountUp = (target, duration = 2000, trigger) => {
   const [count, setCount] = useState(0);
   useEffect(() => {
@@ -105,7 +106,7 @@ const StatsCard = () => {
         <div className=" relative rounded-3xl  min-h-80 bg-gray-900">
           <img
             data-aos="fade-down"
-            src="/src/assets/home1-author-img1.webp"
+            src={CEO}
             alt="CEO"
             className="w-full h-full object-cover object-top absolute inset-0 -top-12    "
           />
@@ -114,12 +115,12 @@ const StatsCard = () => {
           {/* Badges */}
           <div className="absolute top-4 right-4 flex flex-col gap-2 z-10">
             <img
-              src="/src/assets/home-1-icon1.svg"
+              src={homeIcon1}
               alt="badge"
               className="w-16 opacity-90"
             />
             <img
-              src="/src/assets/home-1-icon2.svg"
+              src={homeIcon2}
               alt="badge"
               className="w-16 opacity-90"
             />
