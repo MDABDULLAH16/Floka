@@ -2,6 +2,7 @@ import "./App.css";
 import ApproachSection from "./components/ApproachSection/ApproachSection"; 
 import CompanyExpertise from "./components/CompanyExpertise/CompanyExpertise";
 import CursorFollower from "./components/CursorFollwer/CursorFollwer";
+import Footer from "./components/Footer/Footer";
 import LargeTextMarque from "./components/LargeTextMarque/LargeTextMarque";
 import LogoGallery from "./components/LogoGallery/LogoGallery";
 import Navbar from "./components/Navbar/Navbar";
@@ -32,6 +33,7 @@ function App() {
       <Portfolio></Portfolio>
       <CompanyExpertise></CompanyExpertise>
       <LogoGallery></LogoGallery>
+      <Footer></Footer>
     </div>
   );
 }
