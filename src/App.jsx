@@ -1,5 +1,7 @@
 import "./App.css";
 import ApproachSection from "./components/ApproachSection/ApproachSection"; 
+import CompanyExpertise from "./components/CompanyExpertise/CompanyExpertise";
+import CursorFollower from "./components/CursorFollwer/CursorFollwer";
 import LargeTextMarque from "./components/LargeTextMarque/LargeTextMarque";
 import Navbar from "./components/Navbar/Navbar";
 import Portfolio from "./components/Portfolio/Portfolio";
@@ -20,12 +22,14 @@ function App() {
 
   return (
     <div className="bg-[#f5f5f5] px-6 funnel">
+      <CursorFollower></CursorFollower>
       <Navbar></Navbar>
       <VideoBanner></VideoBanner>
       <ApproachSection></ApproachSection>
       <StatsCard></StatsCard>
       <LargeTextMarque></LargeTextMarque>
       <Portfolio></Portfolio>
+      <CompanyExpertise></CompanyExpertise>
     </div>
   );
 }
